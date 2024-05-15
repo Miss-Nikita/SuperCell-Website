@@ -1,0 +1,633 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: SupercellHeadline-Heavy, sans-serif;
+}
+
+nav {
+    /* height: 10%; */
+    width: 80%;
+    padding: 10px;
+    background-color: black;
+    /* margin: auto; */
+    margin-left: 11%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 30px; */
+    /* gap: 30px; */
+    position: fixed;
+    z-index: 1;
+}
+
+.content1 {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+}
+
+.content1>img {
+    height: 60px;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.links>li {
+    color: gray;
+    transition: 0.25;
+}
+
+.links>li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.content2 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.tabs {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.tabs>li {
+    color: black;
+    padding: 7px 11px;
+    border: 1px solid grey;
+    background-color: gray;
+    border-radius: 6px;
+    border-bottom-left-radius: 0;
+}
+
+.tabs>li {
+    transition: 0.25;
+}
+
+.tabs>li:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.content2>i {
+    color: gray;
+    /* border: 1px solid gray; */
+    font-size: 20px;
+    padding: 20px;
+    border-radius: none;
+    background: none;
+    border-left: 1px solid gray;
+}
+
+.menu {
+    display: none;
+    font-size: 20px;
+    color: white;
+}
+
+@media (min-width:601) and (max-width:1024) {
+    .content1>img {
+        /* height: 25px; */
+        height: 7vh;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .tabs {
+        display: none;
+    }
+
+    .content2>i {
+        display: none;
+    }
+
+    .menu {
+        display: initial;
+    }
+}
+
+@media (min-width:360px) and (max-width:600px) {
+    nav {
+        width: 100%;
+    }
+
+    .content1>img {
+        /* height: 25px; */
+        height: 7vh;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .tabs {
+        display: none;
+    }
+
+    .content2>i {
+        display: none;
+    }
+
+    .menu {
+        display: initial;
+    }
+}
+
+
+.img-container {
+    background-image: url(https://supercell.com/_next/static/media/frontpage_hero.bca9ba5a.webp);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 17%;
+    font-family: SupercellHeadline-Heavy, sans-serif;
+}
+
+.center>h1 {
+    font-size: 40px;
+    margin-bottom: 11px;
+}
+
+.center>p {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(77, 73, 73);
+    width: 37%;
+    margin-bottom: 9%;
+}
+
+.center>button {
+    padding: 16px 17px;
+    background-color: #2d85f3;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: SupercellText-Bold, Helvetica, Arial, sans-serif;
+}
+
+
+.img-container1 {
+    height: 90%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 60px;
+}
+
+.img1>img {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+}
+
+.img1>h1 {
+    color: #fb4a9d;
+    font-family: SupercellText-Bold, Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-size: 13px;
+    padding-top: 18px;
+    padding-bottom: 13px;
+}
+
+.img1>p {
+    font-size: 22px;
+    text-align: center;
+}
+
+.img2>img {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+}
+
+.img2>h1 {
+    color: #fb4a9d;
+    font-family: SupercellText-Bold, Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-size: 13px;
+    padding-top: 18px;
+    padding-bottom: 10px;
+}
+
+.img2>p {
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+
+
+
+
+
+.img-container2 {
+    height: 90%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 60px;
+}
+
+.img3>img {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+}
+
+.img3>h1 {
+    color: #fb4a9d;
+    font-family: SupercellText-Bold, Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-size: 13px;
+    padding-top: 18px;
+    padding-bottom: 13px;
+}
+
+.img3>p {
+    font-size: 22px;
+    text-align: center;
+}
+
+.img4>img {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+}
+
+.img4>h1 {
+    color: #fb4a9d;
+    font-family: SupercellText-Bold, Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-size: 13px;
+    padding-top: 18px;
+    padding-bottom: 10px;
+}
+
+.img4>p {
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+.img-container3 {
+    height: 90%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 60px;
+}
+
+.img5>img {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+}
+
+.img5>h1 {
+    color: #fb4a9d;
+    font-family: SupercellText-Bold, Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-size: 13px;
+    padding-top: 18px;
+    padding-bottom: 13px;
+}
+
+.img5>p {
+    font-size: 22px;
+    text-align: center;
+}
+
+.img6>img {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+}
+
+.img6>h1 {
+    color: #fb4a9d;
+    font-family: SupercellText-Bold, Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-size: 13px;
+    padding-top: 18px;
+    padding-bottom: 10px;
+}
+
+.img6>p {
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+.img-container4 {
+    height: 90%;
+    width: 90%;
+    /* background-color: red; */
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+    /* padding-left: 60px; */
+    margin-left: 5%;
+}
+
+.img7>img {
+    height: 80%;
+    width: 80%;
+    object-fit: cover;
+}
+
+.img7>h1 {
+    color: #fb4a9d;
+    font-family: SupercellText-Bold, Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-size: 13px;
+    padding-top: 18px;
+    padding-bottom: 13px;
+    /* align-items: center; */
+}
+
+.img7>p {
+    width: 70%;
+    font-size: 22px;
+    text-align: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn>button {
+    padding: 15px 20px;
+    background-color: #2d85f3;
+    font-size: 15px;
+    border: none;
+    color: white;
+    border-radius: 9px;
+}
+
+.img-container5 {
+    height: 95%;
+    width: 100%;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* gap: 15%; */
+    margin-top: 22px;
+}
+
+.main1 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    color: white;
+    padding-left: 5%;
+}
+
+.main1>h1 {
+    font-size: 30px;
+}
+
+.main1>p {
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+.main1>button {
+    padding: 16px 18px;
+    font-family: SupercellText-Bold, Helvetica, Arial, sans-serif;
+    border-radius: 4px;
+    border: none;
+    margin-top: 50px;
+}
+
+
+.main2 {
+    display: flex;
+    align-items: center;
+
+}
+
+.main2>img {
+    /* background-image: url(https://supercell.com/_next/static/media/nita.76e85eac.webp); */
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+}
+
+
+.img-container6 {
+    height: 95%;
+    width: 100%;
+    background-color: rgb(138, 138, 190);
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* gap: 15%; */
+    /* margin-top: 22px; */
+}
+
+.main3 {
+    display: flex;
+    align-items: center;
+
+}
+
+.main3>img {
+    /* background-image: url(https://supercell.com/_next/static/media/nita.76e85eac.webp); */
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+}
+
+.main4 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    color: white;
+    padding-right: 2%;
+}
+
+.main4>h1 {
+    font-size: 30px;
+}
+
+.main4>p {
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+.main4>button {
+    padding: 16px 18px;
+    font-family: SupercellText-Bold, Helvetica, Arial, sans-serif;
+    border-radius: 4px;
+    border: none;
+    margin-top: 50px;
+}
+
+.img-container7 {
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main5 {
+    height: 90%;
+    width: 40%;
+    /* background-color: pink; */
+    /* box-shadow: ; */
+}
+
+.main5>img {
+    height: 50%;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.main5>p {
+    margin-top: 30px;
+}
+
+.main6 {
+    height: 90%;
+    width: 40%;
+    /* background-color: gold; */
+}
+
+.main6>img {
+    height: 50%;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.main6>p {
+    margin-top: 30px;
+}
+
+.footer {
+    /* width: 80%; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* margin: auto; */
+    background-color: black;
+}
+.footer>h5{
+    color: white;
+    font-size: 15px;
+    padding-top: 30px;
+    padding-left: 10%;
+    padding-bottom: 8px;
+}
+
+.alllist {
+    width: 80%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    border-bottom: 1px solid gray;
+    padding-bottom: 25px;
+}
+.socialList{
+    font-size: 30px;
+    color: white;
+}
+.social2 >img{
+    height: 50px;
+    /* border: 1px solid white; */
+
+}
+.social3{
+    width: 80%;
+    margin: auto;
+    /* gap: 20px; */
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5%;
+}
+
+.social3 >a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.footerlast{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 8%;
+}
+.last1{
+    color: gray;
+    font-size: 20px;
+}
+.last2>img{
+    height: 60px;
+}
